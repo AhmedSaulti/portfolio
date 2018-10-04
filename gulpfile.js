@@ -11,7 +11,6 @@ var gulp = require('gulp'),
     minifyJSON = require('gulp-jsonminify'),
     imagemin = require('gulp-imagemin'),
     concat = require('gulp-concat');
-
 var env,
     coffeeSources,
     outputDir,
@@ -22,7 +21,8 @@ var env,
     allSources,
     sassStyle;
 
-env = process.env.NODE_ENV || 'development';
+env = 'development';
+// env = process.env.NODE_ENV || 'development';
 
 if (env == 'development') {
     outputDir = 'builds/development/';
@@ -32,8 +32,16 @@ if (env == 'development') {
     sassStyle = 'compressed';
 }
 
-coffeeSources   = ['components/coffee/tagline.coffee'];
-jsSources       = ['components/scripts/*.js'];
+coffeeSources   = [];
+jsSources       = [
+    'components/scripts/jquery.js',
+    'components/scripts/jquery.easing.js',
+    'components/scripts/jquery.easing.compatibility.js',
+    'components/scripts/jquery.magnific-popup.js',
+    'components/scripts/bootstrap.js',
+    'components/scripts/scrollreveal.js',
+    'components/scripts/creative.js',
+];
 sassSources     = ['components/sass/style.scss'];
 htmlSources     = [outputDir + '*.html'];
 jsonSources     = [outputDir + 'js/*.json'];
@@ -46,6 +54,7 @@ gulp.task('coffee', function () {
         }).on('error', gutil.log))
         .pipe(gulp.dest('components/scripts'));
 });
+
 
 gulp.task('js', function () {
     gulp.src(jsSources)
