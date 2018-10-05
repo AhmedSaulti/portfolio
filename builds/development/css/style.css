@@ -302,8 +302,8 @@ header.masthead p {
 }
 /* line 40, ../../../components/sass/_portfolio.scss */
 .portfolio-box .project-tools li {
-  color: #e9684d;
-  background: white;
+  color: #F05F40;
+  background: #fff;
   padding: 3px 6px;
   border-radius: 5px;
   margin: 5px;
