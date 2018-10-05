@@ -207,17 +207,20 @@ header.masthead {
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 0;
+  width: 30%;
+  max-width: 50%;
 }
-/* line 12, ../../../components/sass/_masthead.scss */
+/* line 15, ../../../components/sass/_masthead.scss */
 header.masthead h1 {
   font-size: 2rem;
 }
-/* line 15, ../../../components/sass/_masthead.scss */
+/* line 18, ../../../components/sass/_masthead.scss */
 header.masthead p {
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  /* line 19, ../../../components/sass/_masthead.scss */
+  /* line 22, ../../../components/sass/_masthead.scss */
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -230,13 +233,13 @@ header.masthead p {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 28, ../../../components/sass/_masthead.scss */
+  /* line 31, ../../../components/sass/_masthead.scss */
   header.masthead h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 33, ../../../components/sass/_masthead.scss */
+  /* line 36, ../../../components/sass/_masthead.scss */
   header.masthead h1 {
     font-size: 4rem;
   }
@@ -245,6 +248,10 @@ header.masthead p {
 /* line 2, ../../../components/sass/_services.scss */
 .service-box {
   max-width: 400px;
+}
+/* line 4, ../../../components/sass/_services.scss */
+.service-box .svg {
+  width: 5rem;
 }
 
 /* line 2, ../../../components/sass/_portfolio.scss */
@@ -294,19 +301,36 @@ header.masthead p {
   font-size: 18px;
 }
 /* line 40, ../../../components/sass/_portfolio.scss */
+.portfolio-box .project-tools li {
+  color: #e9684d;
+  background: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin: 5px;
+}
+/* line 48, ../../../components/sass/_portfolio.scss */
+.portfolio-box .shadow-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 -0.4rem 9.4rem rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+/* line 57, ../../../components/sass/_portfolio.scss */
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-/* line 44, ../../../components/sass/_portfolio.scss */
+/* line 61, ../../../components/sass/_portfolio.scss */
 .portfolio-box:focus {
   outline: none;
 }
 @media (min-width: 768px) {
-  /* line 50, ../../../components/sass/_portfolio.scss */
+  /* line 67, ../../../components/sass/_portfolio.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
-  /* line 53, ../../../components/sass/_portfolio.scss */
+  /* line 70, ../../../components/sass/_portfolio.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
