@@ -245,6 +245,12 @@ header.masthead p {
   }
 }
 
+/* line 2, ../../../components/sass/_about.scss */
+#about .btn {
+  background-color: #fff;
+  color: #F05F40;
+}
+
 /* line 2, ../../../components/sass/_services.scss */
 .service-box {
   max-width: 400px;
